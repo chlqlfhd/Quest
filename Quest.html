@@ -1,0 +1,93 @@
+<!DOCITYPE html>
+<html lang="kr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<title>애니메이션 및 게임 명대사ZIP</title>
+<link rel= "stylesheet" href="http://jshome0506.ipdisk.co.kr:8000/apps/xe/luke/master.css">
+</head>
+<script>
+window.onload=function () {
+
+var divBox1
+= document.getElementsByClassName('div1')
+var divBox2
+= document.getElementsByClassName('div1')
+var divBox3
+= document.getElementsByClassName('div1')
+var divBox4
+= document.getElementsByClassName('div1')
+
+var bt01 = document.getElementById('bt01');
+var bt02 = document.getElementById('bt02');
+
+var name1 = document.getElementById('name1');
+var name2 = document.getElementById('name2');
+var name3 = document.getElementById('name3');
+
+var count= 0;
+bt01.addEventListener("click", function(){
+   divBox1[0].style.backgroundColor = "navy";
+   divBox1[1].style.backgroundColor = "khaki";
+   divBox1[2].style.backgroundColor = "cyan ";
+   divBox1[3].style.backgroundColor = "pink";
+})
+
+bt02.addEventListener("click", function(){
+  divBox2[0].style.backgroundColor = "red";
+  divBox2[1].style.backgroundColor = "blue";
+  divBox2[2].style.backgroundColor = "black";
+  divBox2[3].style.backgroundColor = "yellow";
+})
+
+name1.addEventListener("click", function(){
+  if(count == 1){
+    name1.innerHTML="<h6 style ='color:red'>닥터 히루루크</h6>";
+     divBox1[1].style.backgroundColor = "orange";
+     count=0;
+  }else {
+    name1.innerHTML="<h6 style ='color:red'>사람이 언제 죽는다고 생각하나? 바로 사람들에게서 잊혀졌을때다.</h6>";
+     divBox1[1].style.backgroundColor = "hotpink";
+     count=1;
+  }
+})
+name2.addEventListener("click", function(){
+  if(count == 2){
+    name2.innerHTML="<h6 style ='color:red'>트레이너</h6>";
+     divBox1[2].style.backgroundColor = "green";
+     count=0;
+  }else {
+    name2.innerHTML="<h6 style ='color:red'>잘들어라 애초에 기대를 하니까 배신을 당한다 기대를 하지않으면 배신당할 일도 없지.</h6>";
+     divBox1[2].style.backgroundColor = "purple";
+     count=1;
+  }
+})
+name3.addEventListener("click", function(){
+  if(count == 3){
+    name3.innerHTML="<h6 style ='color:red'>제니바</h6>";
+     divBox1[3].style.backgroundColor = "silver";
+     count=0;
+  }else {
+    name3.innerHTML="<h6 style ='color:red'>한번만난건 잊지못하는거다. 기억해 내지 못하는 것 뿐이지.</h6>";
+     divBox1[3].style.backgroundColor = "coral";
+     count=1;
+  }
+})
+}
+</script>
+<body>
+  <div class="div1 div_1">
+    <img id="bt01"src="http://jshome0506.ipdisk.co.kr:8000/apps/xe/luke/media/bt01.png">
+    <br>
+    <img id="bt02"src="http://jshome0506.ipdisk.co.kr:8000/apps/xe/luke/media/bt02.png">
+  </div>
+  <div class="div1 div_2">
+    <h1 id="name1">애니메이션:닥터 히루루크</h1>
+  </div>
+  <div class="div1 div_3">
+    <h1 id="name2">게임:트레이너</h1>
+  </div>
+  <div class="div1 div_4">
+<h1 id="name3">애니메이션:센과 치히로의 행방불명</h1>
+  </div>
+</body>
+</html>
